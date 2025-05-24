@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Streamr</h1>
+    </header>
+    <main>
+        <section id="video-player-section">
+            <video id="video-player" controls autoplay>
+                <!-- Video source will be set here by JavaScript -->
+            </video>
+        </section>
+        <section id="playlist-section">
+            <h2>Playlist</h2>
+            <ul id="playlist">
+                <!-- Playlist items will be populated here by JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Streamr. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
